@@ -12,82 +12,110 @@ html {
 .wrapper {
   width: 900px;
   margin: 0 auto;
+  text-align: center;
+  font-size: 0;
 }
 
-.container {
-  text-align: center;
-  padding-top: 26px;
-}
 /* ==menu== */
-.had {
+.menu {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  margin-bottom: 102px;
+  margin-bottom: 100px;
+  padding-top: 72px;
 }
 
-.had li {
+.menu-item {
   display: inline-block;
   text-transform: uppercase;
+  font-family: "PlayfairDisplay";
 }
 
-.had li a {
+.menu-item a {
   color: purple;
   text-decoration: none;
 }
 
-.had li a:hover,
-.had li a:focus {
+.menu-item a:hover,
+.menu-item a:focus {
   color: blue;
 }
 
-.had li:first-child {
+.menu-item:first-child {
   margin-left: 0;
 }
 
-.had li:last-child {
+.menu-item:last-child {
   margin-right: 0;
 }
 
-.li-right {
+.menu-item--right {
   margin-right: 122px;
   margin-left: 166px;
+  background-blend-mode: #03a9f4;
 }
 
-.li-center {
+.menu-item--center {
   margin-right: 104px;
 }
 
-.li-left {
+.menu-item--left {
   margin-left: 96px;
 }
 
-/* ==container-image== */
+/* ==container== */
 
-.container-image {
-  width: 900px;
+.container {
   margin: 0;
   padding: 0;
   font-size: 0;
-}
-
-.container-image img {
-  margin-bottom: 32px;
-}
-
-.container-image div {
   display: inline-block;
 }
 
-.music-festival {
+.container-width {
   width: 420px;
+}
+
+.container-1 {
+  vertical-align: top;
+}
+
+.container-2 {
+  vertical-align: top;
+}
+
+.container-3 {
+  vertical-align: top;
+}
+
+.container-4 {
+  vertical-align: top;
+}
+
+.container-5 {
+  vertical-align: top;
+}
+
+.container-6 {
+  vertical-align: top;
+}
+
+.picture {
+  margin-bottom: 32px;
+  width: 420px;
+  height: 278px;
+}
+
+.container:nth-of-type(2n - 1) {
   margin-right: 60px;
 }
 
-.cap-coffee img {
-  width: 420px;
-  height: 278px;
-  margin-top: 0;
+.container {
+  margin-bottom: 130px;
+}
+
+.container-margin > div:nth-last-of-type(-n + 2) {
+  margin-bottom: 52px;
 }
 
 .text-title {
@@ -120,13 +148,8 @@ html {
   font-family: "PlayfairDisplay";
   color: rgb(98, 98, 98);
   margin-top: 0;
-  padding: 0;
-  margin-bottom: 130px;
+  margin-bottom: 0;
   text-align: left;
-}
-
-.text:nth-last-child(1) {
-  margin-bottom: 52px;
 }
 
 .button {
@@ -149,9 +172,4 @@ html {
 
 .load::first-letter {
   text-transform: capitalize;
-}
-
-.load:hover,
-.load:focus {
-  color: blue;
 }
